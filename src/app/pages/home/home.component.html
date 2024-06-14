@@ -1,0 +1,13 @@
+<div id="regioes">
+    <div *ngFor="let regiao of pokedex; index as i" [id]="i">
+        <div class="info">
+            <p>{{ regiao.name }}</p>
+            <button (click)="openPokedex(regiao.url, i)">{{ pokemons[i] && pokemons[i].length > 0 ? 'Fechar' : 'Abrir' }}</button>
+        </div>
+        <div class="pokemons">
+            <div class="pokemon" *ngFor="let pokemon of pokemons[i]">
+                <p>{{ pokemon.pokemon_species.name }}</p>
+            </div>
+        </div>
+    </div>
+</div>

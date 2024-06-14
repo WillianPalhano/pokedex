@@ -1,0 +1,44 @@
+#regioes > div {
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #e4e4e4;
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > p {
+            text-transform: capitalize;
+            font-family: fantasy;
+            font-size: 25px;
+            margin: 10px;        
+        }
+        > button {
+            width: 100px;
+            height: 50px;
+            font-size: 16px;
+            font-family: fantasy;
+            background: white;
+            border-radius: 7px;
+            border-color: white;
+        }
+    }
+    .pokemons {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        .pokemon {
+            border: 1px solid;
+            width: -webkit-fill-available;
+            height: auto;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            background: #f2f2f2;
+            font-family: fantasy;
+            color: #4b4b4b;
+            text-transform: capitalize;
+        }
+    }
+}
